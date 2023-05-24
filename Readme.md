@@ -8,3 +8,4 @@ python manage.py check # checks for any problems in the project
 python manage.py createsuperuser # creates an admin user
  http://127.0.0.1:8000/admin/ # url of the admin site
 
+python manage.py runserver
