@@ -12,3 +12,5 @@ python manage.py runserver
 
 note : "pools" folder should be named pools_api
 since the app holds all the api.
+
+using DRF, more infos here : https://www.django-rest-framework.org/tutorial/quickstart/
