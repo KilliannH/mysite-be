@@ -9,3 +9,6 @@ python manage.py createsuperuser # creates an admin user
  http://127.0.0.1:8000/admin/ # url of the admin site
 
 python manage.py runserver
+
+note : "pools" folder should be named pools_api
+since the app holds all the api.

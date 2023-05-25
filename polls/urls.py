@@ -1,7 +1,13 @@
-from django.urls import path
+from django.urls import include, path
 
-from . import views
+from rest_framework import routers
+
+from .views import QuestionViewSet, ChoiceViewSet
+
+router = routers.DefaultRouter()
+router.register(r'question', QuestionViewSet)
+router.register(r'choice', ChoiceViewSet)
 
 urlpatterns = [
-    path("", views.index, name="index"),
+   path('', include(router.urls)),
 ]

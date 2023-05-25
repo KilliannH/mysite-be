@@ -1,6 +1,14 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from rest_framework import viewsets  # provide the advantage of combining multiple sets of logic into a single class.
 
-# Create your views here.
-def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+from .serializers import QuestionSerializer, ChoiceSerializer
+from .models import Question, Choice
+
+
+class QuestionViewSet(viewsets.ModelViewSet):
+   queryset = Question.objects.all()
+   serializer_class = QuestionSerializer
+
+
+class ChoiceViewSet(viewsets.ModelViewSet):
+   queryset = Choice.objects.all()
+   serializer_class = ChoiceSerializer
