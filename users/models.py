@@ -11,4 +11,4 @@ class User(AbstractUser):
     REQUIRED_FIELDS = ['password', 'username']
 
 
-# 16:22 todo -- check requiredFileds in the doc (for me those fields are logical)
+#todo -- check requiredFields in the doc (for me those fields are ok)

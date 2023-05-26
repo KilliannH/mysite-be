@@ -14,3 +14,5 @@ note : "pools" folder should be named pools_api
 since the app holds all the api.
 
 using DRF, more infos here : https://www.django-rest-framework.org/tutorial/quickstart/
+
+packages : djangorestframework, PyJWT, django-cors-headers, django-environ
