@@ -35,7 +35,6 @@ class LoginView(APIView):
             'iat': datetime.datetime.utcnow() # Date Time when the token is created
         }
 
-        # todo -- change secret here
         token = jwt.encode(payload, settings.TOKEN_SECRET, algorithm='HS256')
 
         return Response({'token': token})
